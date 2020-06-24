@@ -1,5 +1,7 @@
 .footer-contacts {
   @extend %list;
+  margin-bottom: 60px;
+  text-align: center;
 
   .contacts-link {
     @extend %link;
@@ -19,8 +21,9 @@
 }
 
 .address {
-  margin-right: 69px;
-  width: calc(100% / 4);
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 4);
+  }
 }
 
 .address-info {

@@ -1,14 +1,21 @@
 .advantages-list {
   @extend %list;
+  margin: -15px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
-  display: flex;
+.advantages-item {
+  margin: 15px;
 
-  & .item {
-    width: calc((100% - 30px * 3) / 4);
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px * 2) / 2);
   }
 
-  & .item:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 30px * 4) / 4);
   }
 }
 

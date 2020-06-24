@@ -3,7 +3,18 @@
 }
 .footer-section {
   display: flex;
-  padding-top: 48px;
-  padding-bottom: 28px;
-  align-items: baseline;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    padding-top: 48px;
+    padding-bottom: 28px;
+  }
 }
