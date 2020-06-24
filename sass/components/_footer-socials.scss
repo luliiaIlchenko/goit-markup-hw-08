@@ -1,0 +1,16 @@
+.footer-socials {
+  @extend %list;
+
+  display: flex;
+
+  & .item {
+    margin-right: 10px;
+  }
+
+  & .socials-link {
+    @extend %socials;
+    background-color: $footer-socials-bg-color;
+    fill: $primary-white-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

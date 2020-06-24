@@ -1,0 +1,34 @@
+.site-nav {
+  @extend %list;
+
+  display: flex;
+  margin-left: 85px;
+
+  & .item {
+    position: relative;
+  }
+
+  & .item + .item {
+    margin-left: 50px;
+  }
+
+  & .page {
+    @extend %link;
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $primary-title-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    transition: $color-transition;
+
+    & :hover,
+    & :focus {
+      color: $accent-color;
+    }
+  }
+}

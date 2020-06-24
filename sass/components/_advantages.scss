@@ -1,0 +1,34 @@
+.advantages-list {
+  @extend %list;
+
+  display: flex;
+
+  & .item {
+    width: calc((100% - 30px * 3) / 4);
+  }
+
+  & .item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.advantages-title {
+  margin-bottom: 10px;
+
+  color: $primary-title-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.advantages-icon {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  background-color: $section-bg-color;
+  border-radius: 4px;
+}
