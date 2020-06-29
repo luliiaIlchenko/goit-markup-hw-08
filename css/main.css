@@ -739,6 +739,8 @@ img {
           align-items: center;
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media screen and (min-width: 1200px) {
