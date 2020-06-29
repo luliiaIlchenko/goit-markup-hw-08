@@ -1,19 +1,23 @@
 .contacts-list {
   @extend %list;
+  margin-bottom: 60px;
 
-  display: none;
-  margin-left: auto;
+  & .item {
+    margin-bottom: 16px;
+  }
+
+  /*margin-left: auto;
 
   & .item + .item {
     margin-left: 50px;
-  }
+  }*/
 }
 
 .contact-link {
   @extend %link;
 
-  display: flex;
-  align-items: center;
+  /*display: flex;
+  align-items: center;*/
 
   color: $primary-text-color;
   font-weight: 500;
