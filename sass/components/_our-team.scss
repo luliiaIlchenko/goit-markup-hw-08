@@ -32,7 +32,7 @@
   @extend %list;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 
   & .socials-link {
     @extend %link;

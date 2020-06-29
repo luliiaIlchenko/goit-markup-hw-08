@@ -20,31 +20,36 @@
           <a href="./index.html" class="logo"
             >Web <span class="logo accent">Studio</span></a
           >
-          <ul class="site-nav">
-            <button class="menu-button is-open" data-menu-button>
-              <svg
-                width="24"
-                height="16"
-                aria-label="Переключатель мобильного меню"
-              >
-                <use
-                  class="menu-open"
-                  href="./images/sprite.svg#menu-icon"
-                ></use>
-                <use
-                  class="menu-close"
-                  href="./images/sprite.svg#close-form-icon"
-                ></use>
-              </svg>
-            </button>
-            <li class="item">
-              <a href="./index.html" class="current page">Студия</a>
-            </li>
-            <li class="item">
-              <a href="./portfolio.html" class="page">Портфолио</a>
-            </li>
-            <li class="item"><a href="#" class="page">Контакты</a></li>
-          </ul>
+
+          <button
+            class="menu-button is-open"
+            area-expanded="false"
+            data-menu-button
+          >
+            <svg
+              width="24"
+              height="16"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use class="menu-open" href="./images/sprite.svg#menu-icon"></use>
+              <use
+                class="menu-close"
+                href="./images/sprite.svg#close-form-icon"
+              ></use>
+            </svg>
+          </button>
+
+          <div class="menu-container">
+            <ul class="site-nav">
+              <li class="item">
+                <a href="./index.html" class="current page">Студия</a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="page">Портфолио</a>
+              </li>
+              <li class="item"><a href="#" class="page">Контакты</a></li>
+            </ul>
+          </div>
         </nav>
 
         <ul class="contacts-list">

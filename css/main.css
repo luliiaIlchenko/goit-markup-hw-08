@@ -370,17 +370,8 @@ img {
           align-items: center;
 }
 
-.site-nav {
-  margin-left: 85px;
-}
-
 .site-nav .item {
-  display: none;
   position: relative;
-}
-
-.site-nav .item + .item {
-  margin-left: 50px;
 }
 
 .site-nav .page {
@@ -655,8 +646,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .socials-list .socials-link {
@@ -865,7 +857,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sign-icon {
@@ -1371,5 +1364,19 @@ img {
 
 .menu-button.is-open .menu-open {
   display: none;
+}
+
+.menu-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: yellow;
+}
+
+.page-header {
+  position: relative;
 }
 /*# sourceMappingURL=main.css.map */

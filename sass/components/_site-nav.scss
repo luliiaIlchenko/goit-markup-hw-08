@@ -1,15 +1,11 @@
 .site-nav {
   @extend %list;
 
-  margin-left: 85px;
-
   & .item {
-    display: none;
     position: relative;
   }
 
   & .item + .item {
-    margin-left: 50px;
   }
 
   & .page {
