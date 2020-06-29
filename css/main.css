@@ -355,10 +355,13 @@ img {
 }
 
 .page-header {
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
 }
 
 .header-menu {
+  display: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -368,13 +371,11 @@ img {
 }
 
 .site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: 85px;
 }
 
 .site-nav .item {
+  display: none;
   position: relative;
 }
 
@@ -501,8 +502,8 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section-title {
@@ -530,6 +531,12 @@ img {
   }
 }
 
+.advantages-list .text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
 .advantages-item {
   margin: 15px;
 }
@@ -548,6 +555,7 @@ img {
 
 .advantages-title {
   margin-bottom: 10px;
+  text-align: center;
   color: #212121;
   font-weight: 700;
   font-size: 14px;
@@ -573,6 +581,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 1199px) {
+  .services-list {
+    display: none;
+  }
 }
 
 .services-list .item {
@@ -681,9 +695,7 @@ img {
 }
 
 .contacts-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   margin-left: auto;
 }
 
@@ -751,19 +763,11 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 60px;
-  padding-bottom: 60px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-  .footer-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -793,6 +797,10 @@ img {
 
 .footer-contacts .contacts-link:hover, .footer-contacts .contacts-link:focus {
   color: #2196f3;
+}
+
+.address {
+  text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -840,6 +848,7 @@ img {
 
 .sign-us {
   margin-bottom: 60px;
+  text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -871,14 +880,8 @@ img {
   fill: #2196f3;
 }
 
-.sign-us {
-  width: calc(100% / 2);
-}
-
 .sign-input {
-  text-align: center;
   margin-bottom: 20px;
-  margin-right: 12px;
   width: 358px;
   padding: 15px 16px;
   font-size: 16px;
@@ -1340,4 +1343,33 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }*/
+.menu-button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: 23px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .menu-close {
+  display: none;
+}
+
+.menu-button.is-open .menu-close {
+  display: block;
+}
+
+.menu-button.is-open .menu-open {
+  display: none;
+}
 /*# sourceMappingURL=main.css.map */

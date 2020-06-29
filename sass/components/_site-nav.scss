@@ -1,10 +1,10 @@
 .site-nav {
   @extend %list;
 
-  display: flex;
   margin-left: 85px;
 
   & .item {
+    display: none;
     position: relative;
   }
 
