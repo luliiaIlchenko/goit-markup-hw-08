@@ -1318,7 +1318,9 @@ img {
   letter-spacing: 0.03em;
 }*/
 .menu-button {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
@@ -1370,6 +1372,19 @@ img {
   text-align: center;
   padding: 20px;
   background-color: yellow;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  .menu-container.is-open {
+    display: block;
+  }
 }
 
 .page-header {
