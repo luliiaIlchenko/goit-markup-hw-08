@@ -1,5 +1,5 @@
 .menu-button {
-  display: inline-flex;
+  display: inline-block;
   margin: 0;
   padding: 0;
   border: none;
@@ -7,8 +7,6 @@
   height: 40px;
   padding: 10px;
   background-color: transparent;
-  margin-right: 23px;
-  margin-left: auto;
   border: none;
   outline: none;
 
@@ -25,15 +23,15 @@
   @media screen and (min-width: $tablet) {
     display: none;
   }
-  & .menu-close {
+  & .menu-open {
     display: none;
   }
 
-  &.is-open .menu-close {
+  &.is-open .menu-open {
     display: block;
   }
 
-  &.is-open .menu-open {
+  &.is-open .menu-close {
     display: none;
   }
 }
