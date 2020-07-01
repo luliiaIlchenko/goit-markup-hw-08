@@ -1,5 +1,6 @@
-.site-nav .current.page {
+.current {
   color: $accent-color;
+  position: relative;
 
   &::after {
     display: block;
