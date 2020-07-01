@@ -7,8 +7,6 @@
   align-items: center;
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 15px;
-  padding-right: 15px;
 
   @media screen and (min-width: $tablet) {
   }
@@ -17,5 +15,9 @@
     align-items: baseline;
     padding-top: 48px;
     padding-bottom: 28px;
+  }
+
+  &.logo {
+    margin-bottom: 20px;
   }
 }

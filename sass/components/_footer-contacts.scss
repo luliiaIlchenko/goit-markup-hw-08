@@ -3,7 +3,7 @@
   margin-bottom: 60px;
   text-align: center;
 
-  .contacts-link {
+  & .contact-link {
     @extend %link;
 
     font-style: normal;
@@ -29,6 +29,8 @@
 
 .address-info {
   font-style: normal;
+  margin-bottom: 8px;
+
   color: $primary-white-color;
   font-size: 14px;
   line-height: 1.7;

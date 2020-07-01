@@ -1,6 +1,7 @@
 .label {
   display: inline-block;
   margin-bottom: 20px;
+  text-align: center;
 
   color: $button-text-color;
   font-weight: 700;
@@ -12,8 +13,8 @@
 }
 
 .sign-us {
-  margin-bottom: 60px;
   text-align: center;
+  width: 100%;
 
   @media screen and (min-width: 1200px) {
     width: calc(100% / 4);
@@ -39,12 +40,9 @@
   }
 }
 
-.sign-form {
-}
-
 .sign-input {
   margin-bottom: 20px;
-  width: 358px;
+  width: 100%;
   padding: 15px 16px;
 
   font-size: 16px;

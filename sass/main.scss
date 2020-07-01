@@ -3,8 +3,9 @@
 @import "./base/normalize";
 @import "./utils/visually-hidden";
 @import "./components/site-nav";
-@import "./base/general";
+
 @import "./components/hero";
+
 @import "./components/advantages";
 @import "./components/logo";
 @import "./components/section";
@@ -12,12 +13,11 @@
 @import "./components/our-team";
 @import "./components/contacts";
 @import "./components/footer";
-@import "./components/footer-contacts";
-@import "./components/footer-socials";
-@import "./components/sign-us-form";
+
 @import "./components/copyright";
 @import "./components/portfolio-filter";
 @import "./components/portfolio";
+
 @import "./components/current-page";
 @import "./components/modal-window";
 @import "./components/contact-us-form";
@@ -26,3 +26,8 @@
 @import "./components/menu-button";
 @import "./components/page-header";
 @import "./components/clients";
+@import "./base/general";
+@import "./components/footer-contacts";
+@import "./components/sign-us-form";
+
+@import "./components/footer-socials";
