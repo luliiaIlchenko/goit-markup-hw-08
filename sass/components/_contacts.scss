@@ -1,8 +1,6 @@
 .contacts-list {
   @extend %list;
-
-  @media screen and (min-width: $tablet) {
-  }
+  text-align: center;
 
   @media screen and (min-width: $desktop) {
     margin-left: auto;
