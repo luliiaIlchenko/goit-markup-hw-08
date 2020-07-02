@@ -1,11 +1,15 @@
 .site-nav {
   @extend %list;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+    & .item {
+      position: relative;
+    }
 
-  & .item {
-    /*position: relative;*/
-  }
-
-  & .item + .item {
+    & .item + .item {
+      margin-left: 50px;
+    }
   }
 
   & .page {
@@ -16,12 +20,23 @@
     margin-bottom: 40px;
     padding-top: 8px;
     padding-bottom: 8px;
-
-    color: $primary-title-color;
-    font-weight: 500;
     font-size: 18px;
+    font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+
+    @media screen and (min-width: $tablet) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    color: $primary-title-color;
+    @media screen and (min-width: $desktop) {
+      font-size: 18px;
+    }
+
     transition: $color-transition;
 
     & :hover,

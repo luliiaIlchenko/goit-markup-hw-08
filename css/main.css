@@ -295,8 +295,21 @@ summary {
   overflow: hidden;
 }
 
-.site-nav .item {
-  /*position: relative;*/
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .site-nav .item {
+    position: relative;
+  }
+  .site-nav .item + .item {
+    margin-left: 50px;
+  }
 }
 
 .site-nav .page {
@@ -304,13 +317,28 @@ summary {
   margin-bottom: 40px;
   padding-top: 8px;
   padding-bottom: 8px;
-  color: #212121;
-  font-weight: 500;
   font-size: 18px;
+  font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  color: #212121;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav .page {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav .page {
+    font-size: 18px;
+  }
 }
 
 .site-nav .page :hover,
@@ -358,8 +386,6 @@ summary {
   /*display: flex;
   justify-content: center;
   align-items: center;*/
-  padding-right: 60px;
-  padding-left: 60px;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-left: auto;
@@ -375,7 +401,9 @@ summary {
 }
 
 .hero-content {
-  /*width: 360px;*/
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 1200px) {
@@ -697,6 +725,8 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1011,14 +1041,16 @@ summary {
 }
 
 .agreement-text {
-  font-size: 14px;
+  font-size: 12px;
+  /*font-size: 14px;*/
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
 
 .agreement-link {
   display: inline-block;
-  font-size: 14px;
+  font-size: 12px;
+  /*font-size: 14;*/
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #2196f3;
@@ -1039,7 +1071,7 @@ summary {
 .close-button {
   position: absolute;
   top: 8px;
-  left: 400px;
+  left: 410px;
   /*top: 50%;
   left: 16px;*/
   /*transform: translateY(-50%);*/
@@ -1129,6 +1161,27 @@ summary {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 81px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-container {
+    margin-left: 85px;
+  }
+}
+
 .page-header {
   position: relative;
 }
@@ -1175,11 +1228,32 @@ summary {
 }
 
 .page-header {
-  padding-top: 16px;
-  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
 }
 
+@media screen and (min-width: 768px) {
+  .page-header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+/*.header {
+  @media screen and (max-width: $tablet - 1) {
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $primary-white-color;
+  }*/
 .header-menu {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -23,6 +23,14 @@
   }
 
   @media screen and (min-width: $tablet) {
+    display: flex;
+    margin-left: 81px;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 85px;
   }
 }
 

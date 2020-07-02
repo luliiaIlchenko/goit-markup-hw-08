@@ -122,14 +122,16 @@
 }
 
 .agreement-text {
-  font-size: 14px;
+  font-size: 12px;
+  /*font-size: 14px;*/
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
 
 .agreement-link {
   display: inline-block;
-  font-size: 14px;
+  font-size: 12px;
+  /*font-size: 14;*/
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: $accent-color;
@@ -151,7 +153,7 @@
 .close-button {
   position: absolute;
   top: 8px;
-  left: 400px;
+  left: 410px;
   /*top: 50%;
   left: 16px;*/
   /*transform: translateY(-50%);*/
