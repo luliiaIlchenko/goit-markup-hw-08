@@ -8,10 +8,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  justify-content: flex-start;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 
   & .item {
     margin-right: 8px;
+    margin-bottom: 15px;
   }
 }
 
