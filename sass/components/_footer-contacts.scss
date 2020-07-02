@@ -21,17 +21,19 @@
 }
 
 .address {
+  text-align: center;
+
   @media screen and (min-width: $tablet) {
     width: calc((100% - 30px) / 3);
   }
+
   @media screen and (min-width: $desktop) {
     width: calc(100% / 4);
+    text-align: start;
   }
-  text-align: center;
 }
 
 .address-info {
-  font-style: normal;
   margin-bottom: 8px;
 
   color: $primary-white-color;

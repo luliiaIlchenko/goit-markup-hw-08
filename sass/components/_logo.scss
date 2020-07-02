@@ -8,7 +8,8 @@
   line-height: 1.2;
   letter-spacing: 0.03em;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
   }
 
   &.accent {

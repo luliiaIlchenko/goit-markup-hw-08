@@ -1,6 +1,14 @@
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  &.none {
+    display: none;
+
+    @media screen and (min-width: $desktop) {
+      display: block;
+    }
+  }
 }
 
 .section-title {
@@ -13,8 +21,4 @@
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
-}
-
-.none {
-  display: none;
 }

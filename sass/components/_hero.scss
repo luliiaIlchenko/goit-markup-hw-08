@@ -17,9 +17,6 @@
 }
 
 .hero {
-  /*display: flex;
-  justify-content: center;
-  align-items: center;*/
   padding-top: 118px;
   padding-bottom: 118px;
   margin-left: auto;
@@ -35,6 +32,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (min-width: $desktop) {
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero-content {
@@ -43,7 +46,8 @@
   margin-right: auto;
 
   @media screen and (min-width: $desktop) {
-    width: 696px;
+    align-items: center;
+    max-width: 696px;
   }
 }
 

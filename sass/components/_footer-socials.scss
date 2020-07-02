@@ -1,6 +1,10 @@
 .join-us {
   margin-bottom: 60px;
   text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    width: calc(100% / 4);
+  }
 }
 
 .footer-socials {

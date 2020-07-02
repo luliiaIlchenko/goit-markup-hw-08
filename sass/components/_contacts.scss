@@ -3,6 +3,7 @@
   text-align: center;
 
   @media screen and (min-width: $desktop) {
+    display: flex;
     margin-left: auto;
 
     & .item + .item {
@@ -10,10 +11,16 @@
     }
   }
 
-  /*margin-bottom: 60px;*/
+  @media screen and (min-width: $mobile) {
+    & .item {
+      margin-bottom: 16px;
+    }
+  }
 
-  & .item {
-    margin-bottom: 16px;
+  @media screen and (min-width: $tablet) {
+    & .item {
+      margin-bottom: 10px;
+    }
   }
 }
 
