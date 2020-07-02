@@ -6,8 +6,6 @@
 @import "./components/current-page";
 @import "./components/hero";
 
-@import "./components/logo";
-
 @import "./components/section";
 @import "./components/our-services";
 @import "./components/our-team";
@@ -15,15 +13,17 @@
 @import "./components/footer";
 
 @import "./components/copyright";
+
 @import "./components/portfolio-filter";
 @import "./components/portfolio";
+
 @import "./components/advantages";
 
 @import "./components/modal-window";
 
 @import "./components/menu-container";
 @import "./components/menu-button";
-@import "./components/page-header";
+
 @import "./components/clients";
 @import "./base/general";
 
@@ -33,3 +33,5 @@
 
 @import "./components/footer-socials";
 @import "./components/contacts";
+@import "./components/logo";
+@import "./components/page-header";
