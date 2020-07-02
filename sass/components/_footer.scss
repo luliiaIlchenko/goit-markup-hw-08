@@ -12,12 +12,23 @@
   }
 
   @media screen and (min-width: $desktop) {
+    flex-direction: row;
     align-items: baseline;
+    justify-content: space-between;
     padding-top: 48px;
     padding-bottom: 28px;
   }
 
   &.logo {
     margin-bottom: 20px;
+  }
+}
+
+.tablet-footer {
+  width: 100%;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-around;
   }
 }
