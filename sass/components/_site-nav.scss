@@ -1,8 +1,10 @@
 .site-nav {
   @extend %list;
+
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: center;
+
     & .item {
       position: relative;
     }
