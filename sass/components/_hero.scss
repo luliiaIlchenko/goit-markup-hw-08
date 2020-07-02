@@ -1,6 +1,7 @@
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
+  text-align: center;
 
   color: $primary-white-color;
   font-weight: 900;
@@ -39,9 +40,9 @@
 }
 
 .hero-content {
-  width: 360px;
+  /*width: 360px;*/
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: 696px;
   }
 }
