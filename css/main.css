@@ -1175,50 +1175,6 @@ img {
   }
 }
 
-.footer-contacts {
-  margin-bottom: 60px;
-  text-align: center;
-}
-
-.footer-contacts .contact-link {
-  font-style: normal;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-contacts .contact-link:hover, .footer-contacts .contact-link:focus {
-  color: #2196f3;
-}
-
-.address {
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .address {
-    width: calc((100% - 30px) / 3);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .address {
-    width: calc(100% / 4);
-  }
-}
-
-.address-info {
-  font-style: normal;
-  margin-bottom: 8px;
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-}
-
 .connection-form {
   padding: 40px;
   width: 450px;
@@ -1415,6 +1371,50 @@ img {
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   overflow: hidden;*/
+.footer-contacts {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.footer-contacts .contact-link {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-contacts .contact-link:hover, .footer-contacts .contact-link:focus {
+  color: #2196f3;
+}
+
+.address {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .address {
+    width: calc((100% - 30px) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address {
+    width: calc(100% / 4);
+  }
+}
+
+.address-info {
+  font-style: normal;
+  margin-bottom: 8px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
 .label {
   display: inline-block;
   margin-bottom: 20px;
@@ -1535,6 +1535,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #757575;
   font-weight: 500;
   font-size: 14px;
