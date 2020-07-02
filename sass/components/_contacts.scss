@@ -1,7 +1,10 @@
 .contacts-list {
   @extend %list;
+
+  @media screen and (min-width: $tablet) {
+  }
+
   @media screen and (min-width: $desktop) {
-    display: flex;
     margin-left: auto;
 
     & .item + .item {

@@ -24,9 +24,11 @@
 
   @media screen and (min-width: $tablet) {
     display: flex;
-    margin-left: 81px;
+    position: static;
     justify-content: space-between;
+    align-items: center;
     flex-grow: 1;
+    padding: 0;
   }
 
   @media screen and (min-width: $desktop) {
