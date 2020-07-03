@@ -11,6 +11,11 @@
   margin-bottom: 40px;
   justify-content: flex-start;
 
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
   @media screen and (min-width: $desktop) {
     margin-bottom: 50px;
   }
