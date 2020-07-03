@@ -312,12 +312,6 @@ summary {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .site-nav {
-    margin-left: 85px;
-  }
-}
-
 .site-nav .page {
   display: block;
   margin-bottom: 40px;
@@ -368,6 +362,10 @@ summary {
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
+}
+
+.site-nav .current {
+  color: #2196f3;
 }
 
 .hero-title {
@@ -997,6 +995,14 @@ summary {
         -ms-flex-align: center;
             align-items: center;
     padding: 0;
+    max-width: 550px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-container {
+    padding: 0;
+    max-width: 810px;
   }
 }
 
