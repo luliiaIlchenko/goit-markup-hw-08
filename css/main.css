@@ -313,7 +313,7 @@ summary {
 }
 
 .site-nav .page {
-  display: block;
+  display: inline-block;
   margin-bottom: 40px;
   padding-top: 8px;
   padding-bottom: 8px;
