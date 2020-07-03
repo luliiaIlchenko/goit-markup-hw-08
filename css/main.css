@@ -629,9 +629,6 @@ summary {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 
@@ -653,28 +650,11 @@ summary {
   }
 }
 
-.copyright {
-  display: none;
-}
-
 @media screen and (min-width: 1200px) {
-  .copyright {
-    display: block;
-    margin-bottom: 0;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 18px;
-    padding-bottom: 21px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    width: 1200px;
-    color: rgba(255, 255, 255, 0.4);
-    font-size: 12px;
-    line-height: 2;
-    text-align: center;
-    letter-spacing: 0.03em;
+  .tablet-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -1269,11 +1249,16 @@ img {
   vertical-align: middle;
   width: 15px;
   height: 15px;
-  margin-right: 8px;
   border: 2px solid #212121;
   border-radius: 2px;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-icon {
+    margin-right: 8px;
+  }
 }
 
 .checkbox:checked + .checkbox-icon {
@@ -1358,6 +1343,12 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
+    text-align: start;
+  }
+}
+
 .footer-contacts .contact-link {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
@@ -1419,6 +1410,7 @@ img {
 @media screen and (min-width: 1200px) {
   .sign-us {
     width: calc(100% / 4);
+    text-align: start;
   }
 }
 
@@ -1463,6 +1455,14 @@ img {
   background: rgba(0, 0, 0, 0);
 }
 
+@media screen and (min-width: 1200px) {
+  .sign-input {
+    margin-right: 12px;
+    margin-bottom: 0;
+    width: 358px;
+  }
+}
+
 .sign-input:hover, .sign-input:focus {
   border-color: #2196f3;
   outline-color: #2196f3;
@@ -1474,6 +1474,14 @@ img {
   max-width: 450px;
 }
 
+@media screen and (min-width: 1200px) {
+  .sign-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .join-us {
   margin-bottom: 60px;
   text-align: center;
@@ -1482,6 +1490,7 @@ img {
 @media screen and (min-width: 1200px) {
   .join-us {
     width: calc(100% / 4);
+    text-align: start;
   }
 }
 

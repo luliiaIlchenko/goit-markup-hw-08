@@ -106,10 +106,14 @@
   vertical-align: middle;
   width: 15px;
   height: 15px;
-  margin-right: 8px;
+
   border: 2px solid $primary-title-color;
   border-radius: 2px;
   transition: $fill-transition;
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 8px;
+  }
 
   .checkbox:checked + & {
     border-color: $accent-color;

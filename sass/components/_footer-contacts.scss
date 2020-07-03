@@ -3,6 +3,10 @@
   margin-bottom: 60px;
   text-align: center;
 
+  @media screen and (min-width: $desktop) {
+    text-align: start;
+  }
+
   & .contact-link {
     @extend %link;
 
