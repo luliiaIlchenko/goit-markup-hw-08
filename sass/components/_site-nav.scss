@@ -26,6 +26,7 @@
     margin-bottom: 40px;
     padding-top: 8px;
     padding-bottom: 8px;
+
     font-size: 18px;
     font-weight: 500;
     line-height: 1.2;
@@ -41,8 +42,6 @@
 
     color: $primary-title-color;
     @media screen and (min-width: $desktop) {
-      padding-top: 32px;
-      padding-bottom: 32px;
       font-size: 18px;
     }
 
