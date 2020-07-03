@@ -1348,6 +1348,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-contacts {
     text-align: start;
+    margin-bottom: 0;
   }
 }
 
@@ -1365,6 +1366,22 @@ img {
   color: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-contacts .contact-link {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contacts .contact-link {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
 .address {
   text-align: center;
 }
@@ -1377,6 +1394,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .address {
+    margin-right: 69px;
     width: calc(100% / 4);
     text-align: start;
   }
@@ -1504,6 +1522,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .join-us {
+    margin-bottom: 0;
     width: calc(100% / 4);
     text-align: start;
   }
@@ -1516,6 +1535,14 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-socials {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
 }
 
 .footer-socials .item {

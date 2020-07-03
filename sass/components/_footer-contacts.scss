@@ -5,6 +5,7 @@
 
   @media screen and (min-width: $desktop) {
     text-align: start;
+    margin-bottom: 0;
   }
 
   & .contact-link {
@@ -21,6 +22,14 @@
     &:focus {
       color: $accent-color;
     }
+
+    @media screen and (min-width: $tablet) {
+      justify-content: center;
+    }
+
+    @media screen and (min-width: $desktop) {
+      justify-content: start;
+    }
   }
 }
 
@@ -32,6 +41,7 @@
   }
 
   @media screen and (min-width: $desktop) {
+    margin-right: 69px;
     width: calc(100% / 4);
     text-align: start;
   }
