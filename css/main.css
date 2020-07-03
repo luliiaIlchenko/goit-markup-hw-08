@@ -641,6 +641,9 @@ summary {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -1394,7 +1397,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .address {
-    margin-right: 69px;
     width: calc(100% / 4);
     text-align: start;
   }
@@ -1435,7 +1437,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .sign-us {
-    width: calc(100% / 4);
     text-align: start;
   }
 }
@@ -1485,7 +1486,7 @@ img {
   .sign-input {
     margin-right: 12px;
     margin-bottom: 0;
-    width: 358px;
+    min-width: 358px;
   }
 }
 
@@ -1497,7 +1498,6 @@ img {
 .sign-form {
   margin-left: auto;
   margin-right: auto;
-  max-width: 450px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1505,7 +1505,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 358px;
+    margin: 0;
   }
 }
 

@@ -17,6 +17,7 @@
 
   @media screen and (min-width: $desktop) {
     align-items: baseline;
+    justify-content: space-between;
   }
 
   &.logo {
