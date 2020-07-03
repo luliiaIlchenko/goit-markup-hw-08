@@ -16,6 +16,9 @@
   text-align: center;
   width: 100%;
 
+  @media screen and (min-width: $tablet) {
+    width: calc(100% / 2);
+  }
   @media screen and (min-width: $desktop) {
     width: calc(100% / 4);
     text-align: start;
@@ -77,5 +80,6 @@
 
   @media screen and (min-width: $desktop) {
     display: flex;
+    max-width: 358px;
   }
 }

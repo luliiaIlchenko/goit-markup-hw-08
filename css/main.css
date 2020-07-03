@@ -620,12 +620,24 @@ summary {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer-section {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-section {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -636,28 +648,18 @@ summary {
   margin-bottom: 20px;
 }
 
+/*
 .tablet-footer {
   width: 100%;
-}
 
-@media screen and (min-width: 768px) {
-  .tablet-footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
+  @media screen and (min-width: $tablet) {
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .tablet-footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
+  @media screen and (min-width: $desktop) {
     display: flex;
   }
-}
-
+}*/
 .portfolio .link {
   color: #212121;
 }
@@ -1369,7 +1371,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .address {
-    width: calc((100% - 30px) / 3);
+    width: calc(100% / 2);
   }
 }
 
@@ -1405,6 +1407,12 @@ img {
 .sign-us {
   text-align: center;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .sign-us {
+    width: calc(100% / 2);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1479,12 +1487,19 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    max-width: 358px;
   }
 }
 
 .join-us {
   margin-bottom: 60px;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .join-us {
+    width: calc(100% / 2);
+  }
 }
 
 @media screen and (min-width: 1200px) {

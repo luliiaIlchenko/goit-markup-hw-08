@@ -28,7 +28,7 @@
   text-align: center;
 
   @media screen and (min-width: $tablet) {
-    width: calc((100% - 30px) / 3);
+    width: calc(100% / 2);
   }
 
   @media screen and (min-width: $desktop) {
