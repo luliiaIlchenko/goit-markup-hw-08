@@ -11,10 +11,8 @@
     }
   }
 
-  @media screen and (min-width: $mobile) {
-    & .item {
-      margin-bottom: 16px;
-    }
+  & .item {
+    margin-bottom: 16px;
   }
 
   @media screen and (min-width: $tablet) {

@@ -87,7 +87,7 @@
   height: 100%;
 
   margin: 0;
-  padding: 63px 24px;
+  padding: 77px 24px;
 
   font-size: 18px;
   line-height: 1.6;
@@ -101,5 +101,13 @@
   .portfolio-card .portfolio-link:hover &,
   .portfolio-card .portfolio-link:focus & {
     transform: translateY(0);
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 49px 24px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 63px 24px;
   }
 }
