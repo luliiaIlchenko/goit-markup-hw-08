@@ -27,6 +27,22 @@
   @media screen and (min-width: $desktop) {
     width: calc((100% - 30px * 4) / 4);
   }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+.thumb {
+  height: 320px;
+
+  @media screen and (min-width: $tablet) {
+    height: 260px;
+  }
 }
 
 .socials-list {
