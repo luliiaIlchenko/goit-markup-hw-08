@@ -775,7 +775,6 @@ summary {
 .portfolio-card {
   margin: 15px;
   margin-bottom: 30px;
-  /*width: calc((100% - 60px) / 3);*/
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   margin-bottom: 30px;
