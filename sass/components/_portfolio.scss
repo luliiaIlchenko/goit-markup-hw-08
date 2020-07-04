@@ -77,6 +77,13 @@
 .portfolio-top {
   position: relative;
   overflow: hidden;
+  height: 294;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
 }
 
 .content-overlay {
